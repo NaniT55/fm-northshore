@@ -110,6 +110,42 @@
       "static/chunks/main-app.js",
       "static/css/app/service-details/page.css",
       "static/chunks/app/service-details/page.js"
+    ],
+    "/signup/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/signup/page.css",
+      "static/chunks/app/signup/page.js"
+    ],
+    "/loanterm-calculator/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/loanterm-calculator/page.css",
+      "static/chunks/app/loanterm-calculator/page.js"
+    ],
+    "/terms/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/terms/page.css",
+      "static/chunks/app/terms/page.js"
+    ],
+    "/privacy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/privacy/page.css",
+      "static/chunks/app/privacy/page.js"
+    ],
+    "/cookies/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/cookies/page.css",
+      "static/chunks/app/cookies/page.js"
+    ],
+    "/disclosure/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/disclosure/page.css",
+      "static/chunks/app/disclosure/page.js"
     ]
   }
 }

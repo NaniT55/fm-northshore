@@ -31,12 +31,12 @@ export default function Contact_Page() {
                                         <div className="single-item">
                                             <div className="icon-box"><img src="assets/images/icons/icon-28.png" alt=""/></div>
                                             <h4>Email Address</h4>
-                                            <p><Link href="mailto:support@example.com">support@example.com</Link><br /><Link href="mailto:contact@example.com">contact@example.com</Link></p>
+                                            <p><Link href="mailto:support@example.com">manisha@fmnorthshore.co.nz</Link><br /></p>
                                         </div>
                                         <div className="single-item">
                                             <div className="icon-box"><img src="assets/images/icons/icon-29.png" alt=""/></div>
                                             <h4>Phone Number</h4>
-                                            <p><Link href="tel:2085440141">+(208) 544 -0141</Link><br /><Link href="tel:2085440142">+(208) 544 -0142</Link></p>
+                                            <p><Link href="tel:0275792581">027 579 2581</Link><br /></p>
                                         </div>
                                     </div>
                                 </div>
