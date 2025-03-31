@@ -1,0 +1,109 @@
+{
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/loading.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
+    ],
+    "/index-2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/index-2/page.css",
+      "static/chunks/app/index-2/page.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/about/page.css",
+      "static/chunks/app/about/page.js"
+    ],
+    "/tools/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tools/page.css",
+      "static/chunks/app/tools/page.js"
+    ],
+    "/amortisation-calculator/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/amortisation-calculator/page.css",
+      "static/chunks/app/amortisation-calculator/page.js"
+    ],
+    "/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/login/page.css",
+      "static/chunks/app/login/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contact/page.css",
+      "static/chunks/app/contact/page.js"
+    ],
+    "/service/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/page.css",
+      "static/chunks/app/service/page.js"
+    ],
+    "/service-details-3/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-3/page.css",
+      "static/chunks/app/service-details-3/page.js"
+    ],
+    "/service-details-4/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-4/page.css",
+      "static/chunks/app/service-details-4/page.js"
+    ],
+    "/service-details-5/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-5/page.css",
+      "static/chunks/app/service-details-5/page.js"
+    ],
+    "/service-details-6/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-6/page.css",
+      "static/chunks/app/service-details-6/page.js"
+    ],
+    "/service-details-2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-2/page.css",
+      "static/chunks/app/service-details-2/page.js"
+    ],
+    "/repayment-calculator/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/repayment-calculator/page.css",
+      "static/chunks/app/repayment-calculator/page.js"
+    ]
+  }
+}
