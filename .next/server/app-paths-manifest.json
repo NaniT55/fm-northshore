@@ -3,6 +3,8 @@
   "/page": "app/page.js",
   "/tools/page": "app/tools/page.js",
   "/about/page": "app/about/page.js",
+  "/amortisation-calculator/page": "app/amortisation-calculator/page.js",
   "/repayment-calculator/page": "app/repayment-calculator/page.js",
-  "/amortisation-calculator/page": "app/amortisation-calculator/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/service-details/page": "app/service-details/page.js"
 }

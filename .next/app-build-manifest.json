@@ -104,6 +104,12 @@
       "static/chunks/main-app.js",
       "static/css/app/repayment-calculator/page.css",
       "static/chunks/app/repayment-calculator/page.js"
+    ],
+    "/service-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details/page.css",
+      "static/chunks/app/service-details/page.js"
     ]
   }
 }
