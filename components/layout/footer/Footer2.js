@@ -52,10 +52,10 @@ export default function Footer2() {
                                 </div>
                                 <div className="widget-content">
                                     <ul className="links-list clearfix">
-                                        <li><Link href="/">Repayment</Link></li>
-                                        <li><Link href="/">Refinance</Link></li>
-                                        <li><Link href="/">Amortisation</Link></li>
-                                        <li><Link href="/">Loan Term</Link></li>
+                                        <li><Link href="/repayment-calculator">Repayment</Link></li>
+                                        <li><Link href="/refinance-calculator">Refinance</Link></li>
+                                        <li><Link href="/amortisation-calculator">Amortisation</Link></li>
+                                        <li><Link href="/loanterm-calculator">Loan Term</Link></li>
                                         {/* <li><Link href="/">Bus Driver</Link></li> */}
                                     </ul>
                                 </div>
@@ -69,8 +69,8 @@ export default function Footer2() {
                                 <div className="widget-content">
                                     <ul className="links-list clearfix">
                                         <li><Link href="/">Home</Link></li>
-                                        <li><Link href="/">Services</Link></li>
-                                        <li><Link href="/">Tools</Link></li>
+                                        <li><Link href="/service">Services</Link></li>
+                                        <li><Link href="/tools">Tools</Link></li>
                                         <li><Link href="/contact">Contact</Link></li>
                                         {/* <li><Link href="/">Clients</Link></li> */}
                                     </ul>
@@ -84,10 +84,10 @@ export default function Footer2() {
                                 </div>
                                 <div className="widget-content">
                                     <ul className="links-list clearfix">
-                                        <li><Link href="/">Terms</Link></li>
-                                        <li><Link href="/">Privacy</Link></li>
-                                        <li><Link href="/">Cookies</Link></li>
-                                        <li><Link href="/">Disclosure</Link></li>
+                                        <li><Link href="/terms">Terms</Link></li>
+                                        <li><Link href="/privacy">Privacy</Link></li>
+                                        <li><Link href="/cookies">Cookies</Link></li>
+                                        <li><Link href="/disclosure">Disclosure</Link></li>
                                         {/* <li><Link href="/">Terms & Conditions</Link></li> */}
                                     </ul>
                                 </div>

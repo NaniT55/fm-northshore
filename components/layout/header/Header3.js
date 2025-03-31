@@ -26,17 +26,17 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup }) {
 
         <header className={`main-header header-style-three ${scroll ? "fixed-header" : ""}`}>
 
-            <div className="header-top">
+            {/* <div className="header-top">
                 <div className="auto-container">
                     <div className="top-inner">
                         <ul className="info">
                             <li>
                                 <img src="assets/images/icons/icon-6.png" alt=""/>
-                                Call: <Link href="tel:912345432">+91 (234) 5432</Link>
+                                Call: <Link href="tel:0275792581">027 579 2581</Link>
                             </li>
                             <li>
                                 <img src="assets/images/icons/icon-7.png" alt=""/>
-                                Mail: <Link href="mailto:jobinfo@example.com">jobinfo@example.com</Link>
+                                Mail: <Link href="mailto:manisha@fmnorthshore.co.nz">manisha@fmnorthshore.co.nz</Link>
                             </li>
                         </ul>
                         <div className="right-column">
@@ -53,7 +53,7 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup }) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             
             <div className="header-lower">
                 <div className="auto-container">
