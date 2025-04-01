@@ -13,6 +13,7 @@
   "dependencies": {
     "@next/font": "^14.2.15",
     "aos": "^2.3.4",
+    "axios": "^1.8.4",
     "bootstrap-touchspin": "^4.7.3",
     "framer-motion": "^12.4.11",
     "gsap": "^3.12.7",
