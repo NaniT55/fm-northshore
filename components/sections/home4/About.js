@@ -22,7 +22,7 @@ export default function About(){
                                     <div className="support-box">
                                         <div className="icon-box"><i className="icon-28"></i></div>
                                         <span>Online Support</span>
-                                        <h4><Link href="tel:912556889">+912 (556) 889</Link></h4>
+                                        <h4><Link href="tel:0275792581">027 579 2581</Link></h4>
                                     </div>
                                 </div>
                             </div>

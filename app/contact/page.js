@@ -1,11 +1,47 @@
 'use client'
-import React from 'react'
+import React, {useState} from 'react'
 import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import Subscribe from '@/components/sections/home2/Subscribe'
 import Dueal from '@/components/sections/home2/Dueal'
 
 export default function Contact_Page() {
+    const [formData, setFormData] = useState({
+        username: '',
+        phone: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+
+    const [status, setStatus] = useState('');
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch('http://localhost:5000/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setStatus('Message sent successfully!');
+                setFormData({ username: '', phone: '', email: '', subject: '', message: '' });
+            } else {
+                setStatus('Error sending message. Please try again.');
+            }
+        } catch (error) {
+            setStatus('Server error. Please try again later.');
+        }
+    };
 
     return (
         <div className="boxed_wrapper">
@@ -42,32 +78,33 @@ export default function Contact_Page() {
                                 </div>
                                 <div className="col-lg-8 col-md-12 col-sm-12 content-column">
                                     <div className="form-inner">
-                                        <form method="post" action="sendemail.php" id="contact-form">
+                                        <form method="post" action="sendemail.php" id="contact-form" onSubmit={handleSubmit}>
                                             <div className="row clearfix">
                                                 <div className="col-lg-6 col-md-6 col-sm-12 form-group">
                                                     <label>Name <span>*</span></label>
-                                                    <input type="text" name="username" placeholder="" required/>
+                                                    <input type="text" name="username" placeholder="" value={formData.username} onChange={handleChange} required/>
                                                 </div>
                                                 <div className="col-lg-6 col-md-6 col-sm-12 form-group">
                                                     <label>Phone <span>*</span></label>
-                                                    <input type="text" name="phone" placeholder="" required/>
+                                                    <input type="text" name="phone" placeholder="" value={formData.phone} onChange={handleChange} required/>
                                                 </div>
                                                 <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                                                     <label>Email Address <span>*</span></label>
-                                                    <input type="email" name="email" placeholder="" required/>
+                                                    <input type="email" name="email" placeholder="" value={formData.email} onChange={handleChange} required/>
                                                 </div>
                                                 <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                                                     <label>Subject <span>*</span></label>
-                                                    <input type="text" name="subject" placeholder="" required/>
+                                                    <input type="text" name="subject" placeholder="" value={formData.subject} onChange={handleChange} required/>
                                                 </div>
                                                 <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                                                     <label>Write Message <span>*</span></label>
-                                                    <textarea name="message" placeholder=""></textarea>
+                                                    <textarea name="message" placeholder="" value={formData.message} onChange={handleChange}></textarea>
                                                 </div>
                                                 <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
                                                     <button type="submit" className="theme-btn btn-one" name="submit-form">Send Message</button>
                                                 </div>
                                             </div>
+                                            {status && <p>{status}</p>}
                                         </form>
                                     </div>
                                 </div>

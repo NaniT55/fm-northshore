@@ -1,7 +1,7 @@
 {
-  "/terms/page": "app/terms/page.js",
-  "/privacy/page": "app/privacy/page.js",
-  "/cookies/page": "app/cookies/page.js",
-  "/loanterm-calculator/page": "app/loanterm-calculator/page.js",
-  "/disclosure/page": "app/disclosure/page.js"
+  "/page": "app/page.js",
+  "/login/page": "app/login/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/about/page": "app/about/page.js",
+  "/signup/page": "app/signup/page.js"
 }
