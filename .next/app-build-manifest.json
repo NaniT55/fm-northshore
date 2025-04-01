@@ -45,6 +45,60 @@
       "static/chunks/main-app.js",
       "static/css/app/signup/page.css",
       "static/chunks/app/signup/page.js"
+    ],
+    "/loanterm-calculator/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/loanterm-calculator/page.css",
+      "static/chunks/app/loanterm-calculator/page.js"
+    ],
+    "/service/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/page.css",
+      "static/chunks/app/service/page.js"
+    ],
+    "/service-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details/page.css",
+      "static/chunks/app/service-details/page.js"
+    ],
+    "/service-details-2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-2/page.css",
+      "static/chunks/app/service-details-2/page.js"
+    ],
+    "/service-details-3/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-3/page.css",
+      "static/chunks/app/service-details-3/page.js"
+    ],
+    "/service-details-4/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-4/page.css",
+      "static/chunks/app/service-details-4/page.js"
+    ],
+    "/service-details-5/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-5/page.css",
+      "static/chunks/app/service-details-5/page.js"
+    ],
+    "/service-details-6/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service-details-6/page.css",
+      "static/chunks/app/service-details-6/page.js"
+    ],
+    "/tools/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tools/page.css",
+      "static/chunks/app/tools/page.js"
     ]
   }
 }

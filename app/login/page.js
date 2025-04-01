@@ -1,11 +1,36 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Link from "next/link"
 import Layout from "@/components/layout/Layout"
 import Subscribe from '@/components/sections/home2/Subscribe'
-
+import axios from 'axios'
 
 export default function Login_Page() {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(false)
+
+    // Handle form submit
+    const handleLogin = async (e) => {
+        e.preventDefault()
+        setLoading(true)
+        setError('')
+
+        try {
+            const response = await axios.post('/api/login', { email, password })
+            if (response.status === 200) {
+                console.log('Login successful', response.data)
+                
+            }
+        } catch (err) {
+            
+            setError('Invalid email or password.')
+            console.error('Login error:', err)
+        } finally {
+            setLoading(false)
+        }
+    }
 
     return (
         <div className="boxed_wrapper">
@@ -14,17 +39,32 @@ export default function Login_Page() {
                     <div className="pattern-layer" style={{ backgroundImage: "url(assets/images/shape/shape-25.png)" }}></div>
                     <div className="auto-container">
                         <div className="form-inner">
-                            <form method="post" action="/login">
+                            <form onSubmit={handleLogin}>
                                 <div className="form-group">
                                     <label>Email <span>*</span></label>
-                                    <input type="email" name="email" required/>
+                                    <input 
+                                        type="email" 
+                                        name="email" 
+                                        required
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                    />
                                 </div>
                                 <div className="form-group">
                                     <label>Password <span>*</span></label>
-                                    <input type="password" name="password" required/>
+                                    <input 
+                                        type="password" 
+                                        name="password" 
+                                        required
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value)}
+                                    />
                                 </div>
+                                {error && <div className="error-message">{error}</div>}
                                 <div className="form-group message-btn">
-                                    <button type="submit" className="theme-btn btn-one">Log In</button>
+                                    <button type="submit" className="theme-btn btn-one" disabled={loading}>
+                                        {loading ? 'Logging In...' : 'Log In'}
+                                    </button>
                                 </div>
                                 <span className="text">or</span>
                                 <ul className="social-links clearfix">
@@ -39,7 +79,7 @@ export default function Login_Page() {
                             <div className="other-option">
                                 <div className="check-box">
                                     <input className="check" type="checkbox" id="checkbox1"/>
-                                    <label for="checkbox1">Remember me</label>
+                                    <label htmlFor="checkbox1">Remember me</label>
                                 </div>
                                 <button className="forgot-password">Forget password?</button>
                             </div>
@@ -48,8 +88,7 @@ export default function Login_Page() {
                     </div>
                 </section>
                 
-                <Subscribe/>
-
+                <Subscribe />
             </Layout>
         </div>
     )

@@ -648,7 +648,7 @@ module.exports = require("url");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/swiper","vendor-chunks/react-modal-video","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fabout%2Fpage&page=%2Fabout%2Fpage&appPaths=%2Fabout%2Fpage&pagePath=private-next-app-dir%2Fabout%2Fpage.js&appDir=C%3A%5CUsers%5CVarun.T%5CDownloads%5Cfm%5Cjobaway%20pack%5CJobaway%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CVarun.T%5CDownloads%5Cfm%5Cjobaway%20pack%5CJobaway&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/swiper","vendor-chunks/@swc","vendor-chunks/react-modal-video"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fabout%2Fpage&page=%2Fabout%2Fpage&appPaths=%2Fabout%2Fpage&pagePath=private-next-app-dir%2Fabout%2Fpage.js&appDir=C%3A%5CUsers%5CVarun.T%5CDownloads%5Cfm%5Cjobaway%20pack%5CJobaway%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CVarun.T%5CDownloads%5Cfm%5Cjobaway%20pack%5CJobaway&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
